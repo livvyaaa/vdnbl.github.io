@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html>
+
     <head>
-        <h1>test success</h1>
+        <h1>the first stage</h1>
     </head>
+    <body>
+        <p>so, you're here now. i assume you know how these types of games work considering you're reading this.</p>
+        <!-- hello -->
+        <p>anyway's, let's begin. the code to this stage is LJKHFVSJHVNJLNVLSDVa </p>
+        <input type="text" id="codetextfield1">
+        <button type="button" onclick="validateCode()">submit answer</button>
+    </body>
+
+    <script src="sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <script>
+        function validateCode() {
+            var code, codehash;
+            code = document.getElementById("codetextfield1").value;
+            codehash = CryptoJS.MD5(code).toString();
+
+            if (codehash === "fcec10fae7452fce27a62e1fd78de166") {
+                location.href = "levelthree.html";
+            }
+        }
+    </script>
+    
 </html>
