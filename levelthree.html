@@ -17,9 +17,9 @@
         function validateCode() {
             var code, codehash;
             code = document.getElementById("codetextfield1").value;
-            codehash = CryptoJS.MD5(code).toString();
+            codehash = CryptoJS.MD5(CryptoJS.MD5(code).toString()).toString();
 
-            if (codehash === "df6193fe6cd03907098be208041ee20a") {
+            if (codehash === "671eb8ec8823fd2df03dba30d6ffac02") {
                 location.href = "ljdnfglkdfjbkldfb.html";
             }
         }
