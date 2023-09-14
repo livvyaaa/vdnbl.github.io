@@ -1,4 +1,39 @@
 <!DOCTYPE html>
 <html>
 
+    <head>
+        <h1>three</h1>
+    </head>
+    <body>
+        <input type="text" id="codetextfield1">
+        <button type="button" onclick="validateCode()">submit answer</button>
+        <br>
+        <p>the last one was pretty easy, yes? if not, you're probably not prepared for these puzzles</p>
+        <p>anyways, the code to this stage is somewhere on this page.</p>
+    </body>
+
+    <!--
+        hi there, you found me!
+        this is a comment block if you're wondering.
+        anyways, the code (without the quotation marks) is
+
+        "this is the code"
+    -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <script src="https://livvyaaa.github.io/vdnbl.github.io/js/ljdnfglkdfjbkldfb.js"></script>
+    <script>
+        function validateCode() {
+            var code, codehash;
+            code = document.getElementById("codetextfield1").value;
+            validateCode2(code);
+            codehash = CryptoJS.MD5(CryptoJS.MD5(code).toString()).toString();
+
+            if (code === "671eb8ec8823fd2df03dba30d6ffac02") {
+                location.href = "kgnblbjrnpibvmipkvm.html";
+            }
+        }
+    </script>
 </html>
